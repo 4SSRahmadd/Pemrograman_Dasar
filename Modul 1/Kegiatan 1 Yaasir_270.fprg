@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="WINDOWS 10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-10 09.58.20 AM"/>
+        <attribute name="created" value="V0lORE9XUyAxMDtMQVBUT1AtUjRVQURUQVA7MjAyMS0xMC0xMDswOC4xMy4zMSBBTTszMDAy"/>
+        <attribute name="edited" value="V0lORE9XUyAxMDtMQVBUT1AtUjRVQURUQVA7MjAyMS0xMC0xMDswOS41OC4yMCBBTTsxOzMxMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NIM" type="String" array="False" size=""/>
+            <input variable="NIM"/>
+            <output expression="&quot;NAMA  :&quot;" newline="True"/>
+            <declare name="NAMA" type="String" array="False" size=""/>
+            <input variable="NAMA"/>
+            <output expression="&quot;NILAI PROGDAS :&quot;" newline="True"/>
+            <declare name="Progdas, Kalkulus, PTI, ORKOM, Nilai" type="Integer" array="False" size=""/>
+            <input variable="Progdas"/>
+            <output expression="&quot;NILAI KALKULUS :&quot;" newline="True"/>
+            <input variable="Kalkulus"/>
+            <output expression="&quot;NILAI PTI :&quot;" newline="True"/>
+            <input variable="PTI"/>
+            <output expression="&quot;NILAI ORKOM :&quot;" newline="True"/>
+            <input variable="ORKOM"/>
+            <assign variable="Nilai" expression="(Progdas+Kalkulus+PTI+ORKOM)/4"/>
+            <if expression="Nilai &gt;= 75">
+                <then>
+                    <output expression="&quot;LULUS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;TIDAK LULUS&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
